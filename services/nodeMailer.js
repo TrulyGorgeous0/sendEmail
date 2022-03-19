@@ -7,13 +7,11 @@ const nodemailer = require("nodemailer");
 
 function userSendMessage(name, email, phone, weddingDate, appointmentDate, details) {
   const transporter = nodemailer.createTransport({
-    //host: "pop3.stackmail.com",
-    //port: 995,
-    //port:993,
-
+    
     host:'smtp-mail.outlook.com',
     port:587,
     secure:false,
+
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
