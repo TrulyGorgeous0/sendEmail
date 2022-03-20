@@ -8,19 +8,27 @@ const nodemailer = require("nodemailer");
 function userSendMessage(name, email, phone, weddingDate, appointmentDate, details) {
   const transporter = nodemailer.createTransport({
     
-    host:'smtp-mail.outlook.com',
-    port:587,
-    secure:false,
+    // host:'smtp-mail.outlook.com',
+    // port:587,
+    // secure:false,
+
+    host:'smtp.trulygorgeous.co.uk',
+    port:465,
+    secure:true,
+    
+   
+    
+
 
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
+      user: process.env.EMAIL2,
+      pass: process.env.PASSWORD2,
     },
   });
 
   const options = {
-    from:process.env.EMAIL,
-    to: process.env.EMAIL,
+    from:process.env.EMAIL2,
+    to: process.env.EMAIL2,
     subject: `new message from trulygorgeous.co.uk`,
     html: `
     <p>Name: ${name}</p>
