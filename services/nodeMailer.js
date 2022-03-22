@@ -21,14 +21,14 @@ function userSendMessage(name, email, phone, weddingDate, appointmentDate, detai
 
 
     auth: {
-      user: process.env.EMAIL2,
-      pass: process.env.PASSWORD2,
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
   const options = {
-    from:process.env.EMAIL2,
-    to: process.env.EMAIL2,
+    from:process.env.EMAIL,
+    to: process.env.EMAIL,
     subject: `new message from trulygorgeous.co.uk`,
     html: `
     <p>Name: ${name}</p>
