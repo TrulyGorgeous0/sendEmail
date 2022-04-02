@@ -21,7 +21,7 @@ class Server {
   middlewares() {
      
  var corsOptions = {
-  origin: ['http://locahost:3000','http://locahost:3001',  'https://trulygorgeous.co.uk', 'https://zen-albattani-507a08.netlify.app', 'https://cristianherreradev.co.uk'],
+  origin: ['http://localhost:3000','http://localhost:3001',  'https://trulygorgeous.co.uk', 'https://zen-albattani-507a08.netlify.app', 'https://cristianherreradev.co.uk'],
    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
