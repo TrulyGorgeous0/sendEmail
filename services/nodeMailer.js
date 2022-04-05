@@ -31,6 +31,7 @@ function userSendMessage(name, email, phone, weddingDate, appointmentDate, detai
     //from:`${email}`,
     to: process.env.EMAIL,
     subject: `NEW BRIDE ENQUIRES`,
+    correspondents:`${email}`,
     html: `
     <p>Name: ${name}</p>
     <p>Email: ${email}</p>
