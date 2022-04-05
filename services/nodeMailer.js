@@ -29,7 +29,7 @@ function userSendMessage(name, email, phone, weddingDate, appointmentDate, detai
   const options = {
     from:process.env.EMAIL,
     to: process.env.EMAIL,
-    subject: `new message from trulygorgeous.co.uk`,
+    subject: `NEW BRIDE ENQUIRES`,
     html: `
     <p>Name: ${name}</p>
     <p>Email: ${email}</p>
